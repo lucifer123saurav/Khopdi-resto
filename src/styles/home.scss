@@ -1,0 +1,63 @@
+@import "colors";
+
+.home {
+     
+    overflow: hidden;
+    height: 100vh;
+    >div{
+        padding-top:10rem ;
+        padding-left: 4rem;
+        >h1{
+            font-size: 3rem;
+        }
+        >p{
+            font-size: 1.5rem;
+        }
+    }
+    >a{
+        margin: 2rem 4rem;
+        display: block;
+       color:white;
+        background-color: $red;
+        width: 10rem;
+        height: 2.5rem;
+        text-align: center;
+        padding: 0.55rem;
+        border-radius: 10px;
+        font-size: 1rem;
+        &:hover{
+            background-color: $redd;
+        }
+    }
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/bg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        transform: scaleX(-1);
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+  .home{
+      height: 85vh;
+    >div{
+        text-align: center;
+        padding-top: 10rem;
+        padding-left: 0rem;
+    }
+    >a{
+        margin: 2rem auto;
+    }
+    &::before{
+        background-image: none;
+    }
+  }
+    
+}
+// <a href="https://www.freepik.com/free-vector/bulb-light-isolated-icon_6821427.htm#page=2&query=hanging%20light%20bulb%20drawing&position=32&from_view=keyword&track=ais">Image by studiogstock</a> on Freepik

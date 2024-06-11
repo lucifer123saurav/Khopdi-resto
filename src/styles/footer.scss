@@ -1,0 +1,56 @@
+@import "colors";
+
+footer{
+    min-height: 8rem;
+    background-color: $dark;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    >div{
+      
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+        margin-left: 8rem;
+        color: white;
+        >h2{
+            color: rgb(243, 222, 194);
+            margin-bottom: 1rem;
+        }
+        >strong{
+            font-size: small;
+            letter-spacing: 1px;
+        }
+    }
+    >aside{
+       text-align: center;
+       color: white;
+       margin: 2rem;
+       margin-right: 4rem;
+       >h4{
+        margin-bottom: 1rem;
+       }
+       >a{
+         font-size: 1.5rem;
+        margin: 1rem;
+        color: white;
+       }
+    }
+}
+
+@media screen and (max-width:600px) {
+
+   footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    >div{
+        margin: auto;
+        margin-top: 2rem;
+    }
+    >aside{
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+   }
+   }

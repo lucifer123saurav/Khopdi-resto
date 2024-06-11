@@ -1,0 +1,42 @@
+@import "colors";
+.founder{
+   
+    width: 100%;
+    height: 80vh; //vh mtlb screen pr dikhne wale part se kita percent cover kar rha
+    background-color:$red;
+    overflow: hidden;
+    >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        height: 100%;
+        margin: auto;
+        color: white;
+        >h3{
+            font-size: 2rem;
+            margin: 2rem 0 1rem 0;
+        }
+        >p{
+            font-size: 1rem;
+            letter-spacing: 3px;
+            line-height: 200%;
+        }
+        >img {
+            padding: 1rem 1rem;
+            border-radius:50%;
+               
+        }
+    }
+  
+}
+@media screen and (max-width:600px) {
+
+   .founder{
+    >div{
+        width: 80%;
+    }
+   }
+  }

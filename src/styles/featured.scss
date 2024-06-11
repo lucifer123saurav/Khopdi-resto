@@ -1,0 +1,87 @@
+@import "colors";
+
+#featured{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+   
+  text-align: center;
+  >h2{
+    margin: 2rem;
+  }
+    .cntnr{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        
+      
+         
+
+    }
+
+}
+
+.card{
+    margin: 3rem;
+    min-height: 20rem;
+    width: 30%;
+   background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.490);
+    >div{
+        border-radius: 20px 20px 0 0;
+       padding-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    >main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+         >img{
+             height: 15rem;
+             width: 100%;
+             object-fit: contain;
+              padding: 1rem;
+           }
+           >p{
+            font-size: 1.5rem;
+            line-height: 200%;
+           }
+           >button{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: block;
+            color:white;
+            background-color: $red;
+            width: 80%;
+            height: 2.5rem;
+            text-align: center;
+            padding: 0.55rem;
+            border: 0;
+            border-radius: 10px;
+            font-size: 1rem;
+            &:hover{
+                background-color: $redd;
+            }
+           }
+           
+        }
+}
+
+@media screen and (max-width:600px) {
+
+   #featured{ 
+    >.cntnr{
+        flex-direction: column;
+      }
+    
+
+}.card{
+        width: 80%;
+        margin: 0.5rem;
+    }
+  }
